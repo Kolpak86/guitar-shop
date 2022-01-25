@@ -2,12 +2,12 @@ import { createReducer, on } from '@ngrx/store';
 import { Guitar } from '../models/guitar';
 import { add, loadSuccess, remove } from './actions';
 
-export interface State {
+export interface ShopState {
   items: Guitar[];
   cart: Guitar[];
 }
 
-export const initialState: State = {
+export const initialState: ShopState = {
   items: [],
   cart: [],
 };

@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Actions, createEffect, ofType } from '@ngrx/effects';
-import { catchError, EMPTY, map, mergeMap } from 'rxjs';
+import { catchError, EMPTY, map, mergeMap, tap } from 'rxjs';
 import { GuitarsService } from '../services/guitars.service';
 import * as ShopActions from './actions';
 
